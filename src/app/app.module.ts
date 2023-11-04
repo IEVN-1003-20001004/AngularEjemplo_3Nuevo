@@ -7,19 +7,23 @@ import { MenuComponent } from './menu/menu/menu.component';
 import { MaterialModule } from './material/material/material.module';
 import { DatosAlumnosComponent } from './formularios/datos-alumnos/datos-alumnos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DatosAlumnosComponent
+    DatosAlumnosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
